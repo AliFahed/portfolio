@@ -1,8 +1,69 @@
+@import "../../global.scss";
+
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: #15023a;
+  background-color: $mainNavigationColor;
+  color: $navigationTextColor;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 3;
+  transition: all 1s ease;
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+
+      .logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .navbarContainer {
+        width: 380px;
+
+        .nav {
+          .navbar-list {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .nav-link {
+              color: inherit;
+              text-decoration: none;
+              font-size: 1.4rem;
+              font-weight: 300;
+
+              &:hover {
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      .icon {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.active {
+    background-color: $navigationActivecolor;
+    color: $mainNavigationColor;
+  }
 }

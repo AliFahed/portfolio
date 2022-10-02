@@ -1,0 +1,39 @@
+@import "../../global.scss";
+
+.menu {
+  width: 300px;
+  height: 100vh;
+  background-color: $mainNavigationColor;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition: all 1s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 200px;
+
+    .nav-link {
+      color: $navigationTextColor;
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 300;
+
+      &:hover {
+        font-weight: 500;
+      }
+    }
+  }
+}
