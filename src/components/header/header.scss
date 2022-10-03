@@ -1,0 +1,43 @@
+@import "../../global.scss";
+
+.header {
+  background-color: $primaryBackgroundColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: $primaryColor;
+  position: relative;
+
+  .hero-section {
+    margin-bottom: 70px;
+
+    .greet {
+      font-size: 4rem;
+      margin: 15px 0;
+    }
+
+    .interest {
+      font-size: 2rem;
+    }
+  }
+
+  a {
+    color: $primaryColor;
+    position: absolute;
+    margin-top: 500px;
+
+    .arrow-down {
+      width: 120px;
+      height: 120px;
+
+      animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}

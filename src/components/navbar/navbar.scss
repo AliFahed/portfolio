@@ -3,8 +3,8 @@
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: $mainNavigationColor;
-  color: $navigationTextColor;
+  background-color: $navBackgroundColor;
+  color: $navTextColor;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -63,7 +63,7 @@
   }
 
   &.active {
-    background-color: $navigationActivecolor;
-    color: $mainNavigationColor;
+    background-color: $navActiveBackgroundColor;
+    color: $navBackgroundColor;
   }
 }

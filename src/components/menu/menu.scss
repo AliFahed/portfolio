@@ -3,7 +3,7 @@
 .menu {
   width: 300px;
   height: 100vh;
-  background-color: $mainNavigationColor;
+  background-color: $navBackgroundColor;
   position: fixed;
   top: 0;
   right: -300px;
@@ -26,7 +26,7 @@
     width: 200px;
 
     .nav-link {
-      color: $navigationTextColor;
+      color: $navTextColor;
       text-decoration: none;
       font-size: 1.8rem;
       font-weight: 300;
