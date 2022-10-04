@@ -1,0 +1,122 @@
+@import "../../global.scss";
+
+.about {
+  background-color: $sectionBackgroundColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  color: $primaryColor;
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .profilePicture {
+        height: 90%;
+        object-fit: cover;
+        border-radius: 30px;
+        border: 1px solid rgb(188, 188, 188);
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+
+    .wrapper {
+      padding: 20px;
+      margin-bottom: 80px;
+
+      .aboutMe {
+        h2 {
+          font-size: 2.1rem;
+          margin-bottom: 20px;
+        }
+
+        p {
+          color: $primaryGray;
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+          text-align: justify;
+          line-height: 1.5;
+        }
+
+        .reachMe {
+          p {
+            span {
+              color: $primaryColor;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      .contactLinks {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 50px;
+
+        .contactWrapper {
+          display: flex;
+          gap: 28px;
+
+          .contactIcon {
+            font-size: 3.2rem;
+            cursor: pointer;
+            padding: 2px;
+
+            &:hover {
+              transform: scale(1.1, 1.1);
+            }
+          }
+
+          .linkedIn {
+            color: #0072b1;
+          }
+
+          .github {
+            color: #171515;
+          }
+
+          .twitter {
+            color: #00acee;
+          }
+        }
+      }
+
+      .emailMe {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .email {
+          background-color: $sectionBackgroundColor;
+          color: $primaryColor;
+          border: 3px solid #fff;
+          padding: 12px 22px;
+          font-size: 1.2rem;
+          font-weight: 600;
+          width: 200px;
+          text-align: center;
+          text-decoration: none;
+          transition: all 0.5s ease;
+
+          &:hover {
+            background-color: $primaryColor;
+            color: $sectionBackgroundColor;
+          }
+        }
+      }
+    }
+  }
+}
