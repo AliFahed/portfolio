@@ -18,10 +18,10 @@ const About = () => {
           <div className="aboutMe">
             <h2>About Me</h2>
             <p>
-              I Beleive in life-long learning, open to learn new technologies,
-              tools, and explore Web Development Field. My focus is in
-              full-stack development, creating full web applications using
-              JavaScript Stack of ReactJS and NodeJS.
+              I Beleive in life-long learning, open to learn new languages,
+              technologies, tools, and explore Web Development Field. My focus
+              is in full-stack development, creating web applications using
+              JavaScript Stack of ReactJs and NodeJs.
             </p>
             <div className="reachMe">
               <p>
