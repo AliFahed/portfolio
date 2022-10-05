@@ -31,13 +31,25 @@ const About = () => {
           </div>
           <div className="contactLinks">
             <div className="contactWrapper">
-              <a href="https://www.linkedin.com/in/ali-fahed-al-dhib-b94a07230/">
+              <a
+                href="https://www.linkedin.com/in/ali-fahed-al-dhib-b94a07230/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <LinkedIn className="contactIcon linkedIn" />
               </a>
-              <a href="https://github.com/AliFahed">
+              <a
+                href="https://github.com/AliFahed"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <GitHub className="contactIcon github" />
               </a>
-              <a href="https://twitter.com/AliFahed_">
+              <a
+                href="https://twitter.com/AliFahed_"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Twitter className="contactIcon twitter" />
               </a>
             </div>
