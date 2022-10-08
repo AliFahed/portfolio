@@ -93,27 +93,35 @@
         }
       }
 
-      .emailMe {
-        margin-top: 20px;
+      .buttonsContainer {
         display: flex;
-        justify-content: center;
         align-items: center;
+        gap: 25px;
 
-        .email {
-          background-color: $sectionBackgroundColor;
-          color: $primaryColor;
-          border: 3px solid #fff;
-          padding: 12px 22px;
-          font-size: 1.2rem;
-          font-weight: 600;
-          width: 200px;
-          text-align: center;
-          text-decoration: none;
-          transition: all 0.5s ease;
+        .emailMe,
+        .myProjects {
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-          &:hover {
-            background-color: $primaryColor;
-            color: $sectionBackgroundColor;
+          .email,
+          .projects {
+            background-color: $sectionBackgroundColor;
+            color: $primaryColor;
+            border: 3px solid #fff;
+            border-radius: 8px;
+            padding: 12px 22px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.5s ease;
+
+            &:hover {
+              background-color: $primaryColor;
+              color: $sectionBackgroundColor;
+            }
           }
         }
       }

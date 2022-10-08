@@ -54,10 +54,17 @@ const About = () => {
               </a>
             </div>
           </div>
-          <div className="emailMe">
-            <a href="#contact" className="email">
-              Email Me
-            </a>
+          <div className="buttonsContainer">
+            <div className="emailMe">
+              <a href="#contact" className="email">
+                Email Me
+              </a>
+            </div>
+            <div className="myProjects">
+              <a href="#projects" className="projects">
+                My Projects
+              </a>
+            </div>
           </div>
         </div>
       </div>
