@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .header {
+  height: calc(100vh - 70px);
   background-color: $primaryBackgroundColor;
   display: flex;
   align-items: center;

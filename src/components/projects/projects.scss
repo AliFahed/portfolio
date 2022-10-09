@@ -1,6 +1,146 @@
 @import "../../global.scss";
 
 .projects {
+  height: auto;
   background-color: $sectionBackgroundColor;
   color: $primaryColor;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .wrapper {
+    .projectsTitle {
+      font-size: 2.1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .projectsContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .projectContainer {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 55px;
+
+        .projectImg {
+          flex: 2;
+          max-width: 800px;
+          height: 500px;
+          // object-fit: contain;
+          // background-position: center;
+        }
+
+        .projectDetailsContainer {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          padding: 20px;
+
+          .projectTitle {
+            font-size: 1.9rem;
+            margin-bottom: 30px;
+          }
+
+          .projectTechStack {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            .techStack {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              background-color: $primaryDarkGray;
+              height: 40px;
+              padding: 12px 18px;
+              border-radius: 15px;
+              margin-bottom: 10px;
+              overflow: hidden;
+
+              .techStackIcon {
+                width: 30px;
+                height: 25px;
+              }
+
+              div {
+                font-size: 1.1rem;
+              }
+            }
+          }
+
+          .projectDescription {
+            color: $primaryGray;
+            font-size: 1.2rem;
+            text-align: justify;
+            line-height: 1.5;
+            margin-bottom: 30px;
+          }
+
+          .projectButtons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            overflow: hidden;
+
+            .projectCode,
+            .projectLive {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .code {
+                background-color: $sectionBackgroundColor;
+                color: $primaryColor;
+                border: 3px solid #fff;
+                border-radius: 8px;
+                padding: 12px 22px;
+                font-size: 1.2rem;
+                font-weight: 300;
+                width: 200px;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.5s ease;
+
+                &:hover {
+                  background-color: $primaryColor;
+                  color: $sectionBackgroundColor;
+                }
+              }
+
+              .live {
+                background-color: $sectionBackgroundColor;
+
+                color: $primaryColor;
+                border: 3px solid #fff;
+                border-radius: 8px;
+                padding: 12px 22px;
+                font-size: 1.2rem;
+                font-weight: 800;
+                width: 200px;
+                text-align: center;
+                text-decoration: none;
+                transition: all 0.5s ease;
+
+                &:hover {
+                  background-color: $primaryColor;
+                  color: $sectionBackgroundColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

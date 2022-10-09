@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .about {
+  height: calc(100vh - 70px);
   background-color: $sectionBackgroundColor;
   display: flex;
   justify-content: center;

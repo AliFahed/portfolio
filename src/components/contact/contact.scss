@@ -1,6 +1,7 @@
 @import "../../global.scss";
 
 .contact {
+  height: calc(100vh - 70px);
   background-color: $primaryBackgroundColor;
   color: $primaryColor;
   padding: 30px;
