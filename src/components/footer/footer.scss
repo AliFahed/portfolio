@@ -12,6 +12,10 @@
     p {
       font-size: 1.1rem;
 
+      @include mobile {
+        font-size: 0.9rem;
+      }
+
       a {
         color: $primaryColor;
         font-weight: 700;

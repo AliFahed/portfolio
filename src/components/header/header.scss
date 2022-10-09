@@ -16,10 +16,18 @@
     .greet {
       font-size: 4rem;
       margin: 15px 0;
+
+      @include mobile {
+        font-size: 2.2rem;
+      }
     }
 
     .interest {
       font-size: 2rem;
+
+      @include mobile {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -33,6 +41,11 @@
       height: 120px;
 
       animation: arrowBlink 2s infinite;
+
+      @include mobile {
+        width: 90px;
+        height: 90px;
+      }
     }
 
     @keyframes arrowBlink {

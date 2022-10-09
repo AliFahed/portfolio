@@ -6,9 +6,19 @@
   color: $primaryColor;
   padding: 30px;
 
+  @include mobile {
+    height: auto;
+    padding: 20px;
+  }
+
   .wrapper {
     display: flex;
     height: 100%;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 30px;
+    }
 
     .left {
       flex: 1;
@@ -16,12 +26,21 @@
       justify-content: center;
       align-items: center;
       border-right: 2px solid #fff;
+      overflow: hidden;
+
+      @include mobile {
+        border: none;
+      }
 
       .contactDetailsWrapper {
         .contactContainer {
           display: flex;
           flex-direction: column;
           gap: 20px;
+
+          @include mobile {
+            margin-top: 40px;
+          }
 
           .email {
             display: flex;
@@ -32,6 +51,11 @@
             padding: 15px 30px;
             border-radius: 8px;
             transition: all 0.5s ease;
+
+            @include mobile {
+              width: 270px;
+              padding: 10px 20px;
+            }
 
             &:hover {
               background-color: $primaryColor;
@@ -50,6 +74,11 @@
             width: 300px;
             cursor: pointer;
             transition: all 0.5s ease;
+
+            @include mobile {
+              width: 270px;
+              padding: 10px 20px;
+            }
 
             &:hover {
               background-color: $primaryColor;
@@ -97,6 +126,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
+
+      @include mobile {
+        margin-top: 10px;
+      }
 
       .form {
         display: flex;
@@ -104,12 +138,20 @@
         gap: 55px;
         min-width: 70%;
 
+        @include mobile {
+          width: 260px;
+        }
+
         h2 {
           display: flex;
           justify-content: center;
           align-items: center;
           font-size: 2.1rem;
           margin-bottom: 20px;
+
+          @include mobile {
+            margin-bottom: 0;
+          }
         }
 
         .inputWrapper {

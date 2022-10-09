@@ -31,6 +31,10 @@
       .navbarContainer {
         width: 380px;
 
+        @include mobile {
+          display: none;
+        }
+
         .nav {
           .navbar-list {
             list-style: none;

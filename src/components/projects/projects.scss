@@ -10,13 +10,22 @@
   align-items: center;
   flex-direction: column;
 
+  @include mobile {
+    padding: 20px;
+  }
+
   .wrapper {
     .projectsTitle {
       font-size: 2.1rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 20px;
       margin-bottom: 80px;
+
+      @include mobile {
+        margin-bottom: 50px;
+      }
     }
 
     .projectsContainer {
@@ -30,12 +39,19 @@
         gap: 50px;
         margin-bottom: 55px;
 
+        @include mobile {
+          flex-direction: column;
+        }
+
         .projectImg {
           flex: 2;
           max-width: 800px;
           height: 500px;
-          // object-fit: contain;
-          // background-position: center;
+
+          @include mobile {
+            width: 300px;
+            margin-right: 10px;
+          }
         }
 
         .projectDetailsContainer {
@@ -47,6 +63,10 @@
           gap: 20px;
           padding: 20px;
 
+          @include mobile {
+            padding: 0;
+          }
+
           .projectTitle {
             font-size: 1.9rem;
             margin-bottom: 30px;
@@ -56,6 +76,13 @@
             display: flex;
             align-items: center;
             gap: 15px;
+
+            height: auto;
+            flex-wrap: wrap;
+
+            @include mobile {
+              justify-content: center;
+            }
 
             .techStack {
               display: flex;
@@ -82,9 +109,13 @@
           .projectDescription {
             color: $primaryGray;
             font-size: 1.2rem;
-            text-align: justify;
             line-height: 1.5;
             margin-bottom: 30px;
+            padding: 10px;
+
+            p {
+              width: 100%;
+            }
           }
 
           .projectButtons {
@@ -92,6 +123,12 @@
             align-items: center;
             gap: 25px;
             overflow: hidden;
+
+            @include mobile {
+              gap: 12px;
+
+              justify-content: center;
+            }
 
             .projectCode,
             .projectLive {
@@ -112,6 +149,12 @@
                 text-decoration: none;
                 transition: all 0.5s ease;
 
+                @include mobile {
+                  font-size: 0.9rem;
+                  padding: 10px 20px;
+                  width: 130px;
+                }
+
                 &:hover {
                   background-color: $primaryColor;
                   color: $sectionBackgroundColor;
@@ -131,6 +174,12 @@
                 text-align: center;
                 text-decoration: none;
                 transition: all 0.5s ease;
+
+                @include mobile {
+                  font-size: 0.9rem;
+                  padding: 10px 20px;
+                  width: 130px;
+                }
 
                 &:hover {
                   background-color: $primaryColor;

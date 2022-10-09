@@ -1,23 +1,34 @@
 @import "../../global.scss";
 
 .skills {
-  height: auto;
+  height: 95vh;
   background-color: $primaryBackgroundColor;
   color: $primaryColor;
   padding: 40px;
+
+  @include mobile {
+    height: auto;
+    padding: 20px;
+  }
 
   .skillsTitle {
     display: flex;
     justify-content: center;
     font-size: 2.1rem;
+    margin-top: 30px;
     margin-bottom: 80px;
+
+    @include mobile {
+      margin-top: 20px;
+      margin-bottom: 60px;
+    }
   }
 
   .wrapper {
     margin-bottom: 20px;
     .gridContainer {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 40px;
 
       .frontEnd,
@@ -36,10 +47,15 @@
           flex-direction: column;
           gap: 40px;
 
+          @include mobile {
+            padding: 20px;
+          }
+
           .skillsContainer1 {
             display: flex;
             align-items: center;
             justify-content: space-around;
+            gap: 10px;
             padding: 10px;
             overflow: hidden;
           }
@@ -48,6 +64,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            gap: 10px;
             padding: 10px;
             overflow: hidden;
           }

@@ -12,3 +12,12 @@ $primaryBlack: #000;
 $sectionBackgroundColor: #252525;
 $skillsWrapperBackgroundColor: #444;
 $contactDetailsBackgroundColor: #252525;
+
+/* responsive */
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
