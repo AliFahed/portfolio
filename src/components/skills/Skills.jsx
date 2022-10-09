@@ -74,7 +74,7 @@ const Skills = () => {
                     alt="Express Icon"
                     className="skillIcon"
                   />
-                  <p>Express</p>
+                  <p>ExpressJs</p>
                 </div>
               </div>
               <div className="skillsContainer2">

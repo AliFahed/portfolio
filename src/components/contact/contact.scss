@@ -28,7 +28,7 @@
             align-items: center;
             gap: 8px;
             font-size: 1.1rem;
-            background-color: $primaryBlack;
+            background-color: $contactDetailsBackgroundColor;
             padding: 15px 30px;
             border-radius: 8px;
             transition: all 0.5s ease;
@@ -44,7 +44,7 @@
           }
 
           .socials {
-            background-color: $primaryBlack;
+            background-color: $contactDetailsBackgroundColor;
             padding: 15px 30px;
             border-radius: 8px;
             width: 300px;
@@ -59,7 +59,7 @@
               }
 
               p {
-                color: black;
+                color: $primaryBlack;
               }
             }
 
@@ -157,6 +157,7 @@
           padding: 12px 22px;
           font-weight: 600;
           text-align: center;
+          margin-bottom: 50px;
           cursor: pointer;
           transition: all 0.5s ease;
 

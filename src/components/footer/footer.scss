@@ -1,0 +1,25 @@
+@import "../../global.scss";
+
+.footer {
+  height: 70px;
+  background-color: $sectionBackgroundColor;
+  color: $primaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .footerText {
+    p {
+      font-size: 1.1rem;
+
+      a {
+        color: $primaryColor;
+        font-weight: 700;
+
+        &:hover {
+          color: $primaryGray;
+        }
+      }
+    }
+  }
+}

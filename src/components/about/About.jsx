@@ -21,7 +21,7 @@ const About = () => {
               I Beleive in life-long learning, open to learn new languages,
               technologies, tools, and explore Web Development Field. My focus
               is in full-stack development, creating web applications using
-              JavaScript Stack of ReactJs and NodeJs.
+              JavaScript. Highly interested in Open Source & DevOps.
             </p>
             <div className="reachMe">
               <p>

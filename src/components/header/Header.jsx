@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header" id="header">
       <div className="hero-section">
         <h1 className="greet">Hi, I am Ali Fahed</h1>
-        <p className="interest">A Web Developer</p>
+        <p className="interest">Web Developer</p>
       </div>
       <a href="#about">
         <KeyboardArrowDown className="arrow-down" />

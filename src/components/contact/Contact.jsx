@@ -57,12 +57,14 @@ const Contact = () => {
                 type="text"
                 name="email"
                 placeholder="Your Email"
+                maxLength={50}
                 required
               />
               <textarea
                 name="message"
                 id="message"
                 placeholder="Write a Message"
+                minLength={2}
                 required
               ></textarea>
             </div>
