@@ -1,26 +1,6 @@
 export const projectsData = [
   {
     id: 1,
-    img: "assets/shopcom-project.png",
-    title: "ShopCom",
-    techStack: [
-      {
-        name: "React",
-        icon: "assets/react-icon.svg",
-      },
-      {
-        name: "CSS",
-        icon: "assets/css-icon.svg",
-      },
-    ],
-    desc: "ShopCom have the best nike's shoe collection. Users can select and add items, the selected items will automatically be viewed in the shopping cart, including the total price.",
-    links: {
-      github: "https://github.com/AliFahed/shopping-cart",
-      live: "https://alifahed.github.io/shopping-cart/",
-    },
-  },
-  {
-    id: 2,
     img: "assets/mini-message-board-project.png",
     title: "Mini Message Borad",
     techStack: [
@@ -44,6 +24,26 @@ export const projectsData = [
     },
   },
   {
+    id: 2,
+    img: "assets/shopcom-project.png",
+    title: "ShopCom",
+    techStack: [
+      {
+        name: "React",
+        icon: "assets/react-icon.svg",
+      },
+      {
+        name: "CSS",
+        icon: "assets/css-icon.svg",
+      },
+    ],
+    desc: "ShopCom have the best nike's shoe collection. Users can select and add items, the selected items will automatically be viewed in the shopping cart, including the total price.",
+    links: {
+      github: "https://github.com/AliFahed/shopping-cart",
+      live: "https://alifahed.github.io/shopping-cart/",
+    },
+  },
+  {
     id: 3,
     img: "assets/my-portfolio-project.png",
     title: "My Portfolio Website",
@@ -60,7 +60,7 @@ export const projectsData = [
     desc: "I designed & created my portfolio website. I built reusable component (templete that is used for each project) for the whole projects section, to easily add, update, or remove projects.",
     links: {
       github: "https://github.com/AliFahed/portfolio",
-      live: "",
+      live: "#header",
     },
   },
   {

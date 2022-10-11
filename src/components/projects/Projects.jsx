@@ -6,15 +6,20 @@ const Projects = () => {
     <div className="projects" id="projects">
       <div className="wrapper">
         <h2 className="projectsTitle">My Projects</h2>
+
         {projectsData.map((project, index) => (
           <div key={index}>
             <div className="projectsContainer">
               <div className="projectContainer">
-                <img
-                  src={project.img}
-                  alt="project ScreenShoot"
-                  className="projectImg"
-                />
+                <div className="projectImgWrapper">
+                  <div className="imgContainer">
+                    <img
+                      src={project.img}
+                      alt="project ScreenShoot"
+                      className="projectImg"
+                    />
+                  </div>
+                </div>
                 <div className="projectDetailsContainer">
                   <h2 className="projectTitle">{project.title}</h2>
                   <div className="projectTechStack">
