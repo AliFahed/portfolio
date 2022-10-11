@@ -51,15 +51,7 @@
             padding: 20px;
           }
 
-          .skillsContainer1 {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            gap: 10px;
-            padding: 10px;
-            overflow: hidden;
-          }
-
+          .skillsContainer1,
           .skillsContainer2 {
             display: flex;
             align-items: center;
@@ -74,6 +66,7 @@
             flex-direction: column;
             align-items: center;
             gap: 10px;
+            margin-left: 10px;
 
             &:hover {
               transform: scale(1.1);
@@ -88,6 +81,10 @@
               font-weight: 300;
               font-size: 1.1rem;
             }
+          }
+
+          .git {
+            margin-left: 20px;
           }
         }
       }

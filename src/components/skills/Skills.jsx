@@ -102,7 +102,7 @@ const Skills = () => {
             <h2>Technologies/ Tools</h2>
             <div className="skillsWrapper">
               <div className="skillsContainer1">
-                <div className="skillDetails">
+                <div className="skillDetails git">
                   <img
                     src="assets/git-icon.svg"
                     alt="Git Icon"
