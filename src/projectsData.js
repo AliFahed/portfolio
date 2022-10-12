@@ -2,7 +2,7 @@ export const projectsData = [
   {
     id: 1,
     img: "assets/mini-message-board-project.png",
-    title: "Mini Message Borad",
+    title: "Mini Message Board",
     techStack: [
       {
         name: "Express.js",

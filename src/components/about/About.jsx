@@ -18,7 +18,7 @@ const About = () => {
           <div className="aboutMe">
             <h2>About Me</h2>
             <p>
-              I Beleive in life-long learning, open to learn new languages,
+              I Believe in life-long learning, open to learn new languages,
               technologies, tools, and explore Web Development Field. My focus
               is in full-stack development, creating web applications using
               JavaScript. Highly interested in Open Source.
