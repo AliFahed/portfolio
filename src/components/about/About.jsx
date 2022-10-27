@@ -32,7 +32,7 @@ const About = () => {
           <div className="contactLinks">
             <div className="contactWrapper">
               <a
-                href="https://www.linkedin.com/in/ali-fahed-al-dhib-b94a07230/"
+                href="https://www.linkedin.com/in/ali-fahed-b94a07230/"
                 target="_blank"
                 rel="noreferrer"
               >
